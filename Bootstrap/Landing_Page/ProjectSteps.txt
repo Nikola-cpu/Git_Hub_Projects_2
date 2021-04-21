@@ -1,0 +1,373 @@
+Prepare all files and folders for the project
+After you finish,try to do everything by yourself,look at github if you get stuck
+Write clean code with spaceses and comments
+Try not to repeat yourself
+
+
+Waves site - https://getwaves.io/
+Gradient site - https://cssgradient.io/
+Images site - https://unsplash.com/
+Images site - https://www.manypixels.co/
+
+
+1.Add all folders and files form github,bootstrap site and local
+
+2.Take navbar from Bootstrap site and make it as container
+
+3.Remove disabled link
+
+4.Add logo instead of Navbar inside navbar brand
+
+5.Move your links to the right by using justify-content-end
+
+6.Navbar needs to be sticky to the top. Use fixed-top class inside navbar
+
+---------------------------------------------------------------------------
+
+7.Add header below the navbar,and add 2 styles gradient and page-header
+
+8.Go to CSS Gradient and choose your color
+
+9.At the top om main.css add  html, body {height: 100%; font-size: 1rem};
+
+10. .gradient {
+	background-color: rgb(0, 97, 242);
+	background: linear-gradient(135deg, rgba(0,97,242,1) 0%, rgba(105,0,199,1) 100%);
+}
+
+11.Put this inside 
+<header class="gradient page-header">
+	<div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            Text
+          </div>
+          <div class="col-md-6">
+            <img src="img/email_campaign_monochromatic.svg" alt="Header image">
+          </div>
+        </div>
+      </div>
+</header>
+
+
+12.Then add this,you will need some margin
+
+<header class="page-header gradient">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Build website using MDB</h2>
+
+            <p>
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable
+              template.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/email_campaign_monochromatic.svg" alt="Header image">
+          </div>
+        </div>
+      </div>
+    </header>
+
+13.In main.css add 
+
+.page-header {
+	margin-top: 4rem;
+	font-size: 1.25rem;
+	color: #fff;
+}
+
+14.Now go to google font and take Montserrat 300 Light,dont forget to link it to html and css
+
+15.Now you want to put your text to center and add some padding to the top so you can see whole picture
+
+16.Decrease columns to 5,because they are too big
+
+17.It is time to add some buttons,go to Bootstrap and add some buttons
+
+<button type="button" class="btn btn-outline-success">Read more</button>
+<button type="button" class="btn btn-outline-warning">Play video</button>
+
+and make them bigger using btn-large
+
+18.Last thing to do it so add a wawe
+
+19.Go to getwawes.io website,click on the button to create some wawes
+
+20.Put at the end of the header
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,112C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+21.Change svg fill = #fff;
+
+22.Add new section below the header and give it a class .companies
+
+23.Add this code to it
+
+ <section class="companies">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"><img src="img/companies/1.png" alt="Company logo" class="img-fluid"></div>
+          <div class="col-md-2"><img src="img/companies/2.png" alt="Company logo" class="img-fluid"></div>
+          <div class="col-md-2"><img src="img/companies/3.png" alt="Company logo" class="img-fluid"></div>
+          <div class="col-md-2"><img src="img/companies/4.png" alt="Company logo" class="img-fluid"></div>
+          <div class="col-md-2"><img src="img/companies/5.png" alt="Company logo" class="img-fluid"></div>
+          <div class="col-md-2"><img src="img/companies/6.png" alt="Company logo" class="img-fluid"></div>
+        </div>
+      </div>
+    </section>
+
+24.If you decrease your screen you can see that you need to add some more spacing,add g-5, and text-align: center
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+25.Add another section below and give it class .feature and .gradient.Add this code
+
+<section class="feature gradient">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/seo_monochromatic.svg" alt="">
+          </div>
+          <div class="col-md-6">
+            <h1>Introducing MDB</h1>
+            <p class="my-4">
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable
+              template.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+26.At the end of second column add ul list with 4 items
+
+ 	    <ul>
+              <li>Best for Creative Agency</li>
+              <li>Build with Latest Technology</li>
+              <li>Super Responsive</li>
+              <li>Creative Design</li>
+            </ul>
+
+27.Now add some styles .feature{color: #fff;},add some margin top,and then but text to center
+
+28.Replace ul bullets with svg icons,you already download it
+
+29.First go to main.css and add some padding to ul
+
+.feature ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+30.
+
+.feature ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+31.Then change background-image of li items
+
+.feature ul li {
+    padding-left: 2rem;
+    background-image: url(img/check.svg);
+    background-repeat: no-repeat;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+32.After that create a new wave and added it to the end of the section,add one more wave to the top
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+33.Add new section,and give it a class .icons
+col-md-4 and take some icons from Bootstrap website,make sure to put them on right place,and display them on the same row
+
+<section class="icons">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"><div class="icon gradient mb-4">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-layers"
+          >
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          </div>
+          <h3>Built for developers</h3>
+          <p>
+            Our customizable, block-based build system makes creating your
+            next project fast and easy!
+          </p>
+        </div>
+          <div class="col-md-4"><div class="icon gradient mb-4">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-smartphone"
+          >
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+          </svg>
+          </div>
+          <h3>Modern responsive design</h3>
+          <p class="mb-0">
+            Featuring carefully crafted, mobile-first components, your end
+            product will function beautifully on any device!
+          </p>
+        </div>
+          <div class="col-md-4"><div class="icon gradient mb-4">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-code"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+          </div>
+          <h3>Complete documentation</h3>
+          <p class="mb-0">
+            All of the layouts, page sections, components, and utilities are
+            fully covered in this products docs.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+34.Style the ICON class.
+
+.icon {
+    color: #fff;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.75rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+35.Now you want to put them on center of the page
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+36.Add new section and call it gallery,add this code
+
+<section class="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Check our latest awesome creative work</h1>
+            <p>
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable
+              template
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+37.Now add some styles to gallery bgc color - whitesmoke
+
+38.After that add another row to gallery and put 3 images col-md-4
+
+39.Change border radius of images
+
+40.Add button and move it to the right,and some spacing to gallery.Think about parent elements
+
+41.Generate new wave from the site,put it at the top and at the bottom of the .gallery section.Change background-color of wave
+
+42.Decrease height of wave in svg
+
+43.Create a new section, section.services.Give it a gradient class also
+
+44.Add this code
+
+<section class="services gradient">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">text</div>
+          <div class="col-md-6"><img src="img/coding_.svg" alt="" /></div>
+          <div class="col-md-6"><img src="img/marketing.svg" alt="" /></div>
+          <div class="col-md-6">text</div>
+          <div class="col-md-6">text</div>
+          <div class="col-md-6"><img src="img/revenue_.svg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+45.change texts  with buttons and some other text
+
+46.Add syles to .services, font-color,then work on aligments and paddings,put col-md-5, 6 is too much
+
+47.Now add missing waves on top and the bottom
+
+48.Create last section  section.contact
+
+<section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Contact us:</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+49.Add form from Bootstrap and button under it
+
+50.Now add the image right to the form,under the bottom,you dont need to center everything
+
+51.Now just add footer and give it a class .gradient
+
+   <footer class="gradient">
+      <div class="container-fluid text-center">
+        <span
+          >Made with <3 by
+          <a href="https://mdbootstrap.com">MDBootstrap.com</a></span
+        >
+      </div>
+    </footer>
+
+52.And in main.css
+
+
+
+
